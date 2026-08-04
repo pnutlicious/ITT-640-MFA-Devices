@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security Overview</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Page container */
+        .security-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Section boxes */
+        .section {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .section h2,
+        .section h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .section p {
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        /* MFA method items */
+        .item {
+            background: #0f0f0f;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .item p {
+            margin: 5px 0;
+        }
+
+        /* Add method button */
+        .add-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #4a90e2;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .add-btn:hover {
+            background: #357abd;
+        }
+
+        /* Trusted devices */
+        .device-item {
+            background: #0f0f0f;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .device-item p {
+            margin: 5px 0;
+        }
+
+        .remove {
+            color: #ff4d4d;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Top navigation buttons */
+        .top-buttons {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .top-buttons a {
+            margin-left: 10px;
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .top-buttons a:hover {
+            color: #357abd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="security-container">
+
+    <!-- Top Buttons -->
+    <div class="top-buttons">
+        <a href="dashboard.html">Overview</a>
+        <a href="enroll.html">Enroll</a>
+        <a href="settings.html">Settings</a>
+    </div>
+
+    <!-- Header -->
+    <div class="section">
+        <h2>Welcome, Israel</h2>
+        <p>Your account is protected</p>
+        <p><strong>3 of 4 MFA methods active</strong></p>
+        <p><strong>Security Score:</strong> 98</p>
+    </div>
+
+    <!-- MFA Methods -->
+    <div class="section">
+        <h3>MFA Methods</h3>
+
+        <div class="item">
+            <p><strong>Authenticator App</strong></p>
+            <p>Microsoft Authenticator • Android</p>
+            <p>Status: Primary • Active</p>
+        </div>
+
+        <div class="item">
+            <p><strong>SMS Verification</strong></p>
+            <p>+1 (000) 000‑****</p>
+            <p>Status: Active</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Email Backup</strong></p>
+            <p>isra****@live.com</p>
+            <p>Status: Active</p>
+        </div>
+
+        <div class="item">
+            <p><strong>Hardware Security Key</strong></p>
+            <p>YubiKey 5C NFC</p>
+            <p>Status: Off</p>
+        </div>
+
+        <a class="add-btn" href="#">+ Add method</a>
+    </div>
+
+    <!-- Trusted Devices -->
+    <div class="section">
+        <h3>Trusted Devices</h3>
+
+        <div class="device-item">
+            <p><strong>Surface Book</strong></p>
+            <p>Windows 11 • San Francisco, CA</p>
+            <p>This Device • Last active 2 min ago</p>
+            <p class="remove">Remove</p>
+        </div>
+
+        <div class="device-item">
+            <p><strong>Galaxy S24</strong></p>
+            <p>Android 16 • San Francisco, CA</p>
+            <p>Last active 1 hr ago</p>
+            <p class="remove">Remove</p>
+        </div>
+
+        <div class="device-item">
+            <p><strong>Samsung Galaxy Tab</strong></p>
+            <p>Android 16 • Oakland, CA</p>
+            <p>Last active 3 days ago</p>
+            <p class="remove">Remove</p>
+        </div>
+
+        <div class="device-item">
+            <p><strong>Windows PC</strong></p>
+            <p>Windows 11 • New York, NY</p>
+            <p>Last active 12 days ago</p>
+            <p class="remove">Remove</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
