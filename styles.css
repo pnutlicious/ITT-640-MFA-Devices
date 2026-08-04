@@ -1,3 +1,7 @@
+body {
+    background: #0f0f0f;   /* Ensures full-page dark background */
+    color: #fff;
+}
 /* Security Overview Page */
 .security-container {
     max-width: 900px;
