@@ -1,6 +1,9 @@
 body {
-    background: #0f0f0f;   /* Ensures full-page dark background */
+    background: #0f0f0f;
+    font-family: Arial, sans-serif;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 /* Security Overview Page */
 .security-container {
