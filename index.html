@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>Security Overview</title>
     <link rel="stylesheet" href="styles.css">
-
-    
 </head>
 <body>
 
@@ -26,68 +24,78 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</p>
     </div>
 
-    <!-- MFA Methods -->
-    <div class="section">
-        <h3>MFA Methods</h3>
+    <!-- TWO COLUMN LAYOUT -->
+    <div class="two-column">
 
-        <div class="item">
-            <p><strong>Authenticator App</strong></p>
-            <p>Microsoft Authenticator • Android</p>
-            <p>Status: Primary • Active</p>
+        <!-- MFA Methods -->
+        <div class="column">
+            <div class="section">
+                <h3>MFA Methods</h3>
+
+                <div class="item">
+                    <p><strong>Authenticator App</strong></p>
+                    <p>Microsoft Authenticator • Android</p>
+                    <p>Status: Primary • Active</p>
+                </div>
+
+                <div class="item">
+                    <p><strong>SMS Verification</strong></p>
+                    <p>+1 (000) 000‑****</p>
+                    <p>Status: Active</p>
+                </div>
+
+                <div class="item">
+                    <p><strong>Email Backup</strong></p>
+                    <p>isra****@live.com</p>
+                    <p>Status: Active</p>
+                </div>
+
+                <div class="item">
+                    <p><strong>Hardware Security Key</strong></p>
+                    <p>YubiKey 5C NFC</p>
+                    <p>Status: Off</p>
+                </div>
+
+                <a class="add-btn" href="#" onclick="alert('Too many methods used, contact IT')">+ Add method</a>
+            </div>
         </div>
 
-        <div class="item">
-            <p><strong>SMS Verification</strong></p>
-            <p>+1 (000) 000‑****</p>
-            <p>Status: Active</p>
+        <!-- Trusted Devices -->
+        <div class="column">
+            <div class="section">
+                <h3>Trusted Devices</h3>
+
+                <div class="device-item">
+                    <p><strong>Surface Book</strong></p>
+                    <p>Windows 11 • San Francisco, CA</p>
+                    <p>This Device • Last active 2 min ago</p>
+                </div>
+
+                <div class="device-item">
+                    <p><strong>Galaxy S24</strong></p>
+                    <p>Android 16 • San Francisco, CA</p>
+                    <p>Last active 1 hr ago</p>
+                </div>
+
+                <div class="device-item">
+                    <p><strong>Samsung Galaxy Tab</strong></p>
+                    <p>Android 16 • Oakland, CA</p>
+                    <p>Last active 3 days ago</p>
+                </div>
+
+                <div class="device-item">
+                    <p><strong>Windows PC</strong></p>
+                    <p>Windows 11 • New York, NY</p>
+                    <p>Last active 12 days ago</p>
+                </div>
+
+            </div>
         </div>
 
-        <div class="item">
-            <p><strong>Email Backup</strong></p>
-            <p>isra****@live.com</p>
-            <p>Status: Active</p>
-        </div>
-
-        <div class="item">
-            <p><strong>Hardware Security Key</strong></p>
-            <p>YubiKey 5C NFC</p>
-            <p>Status: Off</p>
-        </div>
-
-        <a class="add-btn" href="#" onclick="alert('Too many methods used, contact IT')">+ Add method</a>
-    </div>
-
-    <!-- Trusted Devices -->
-    <div class="section">
-        <h3>Trusted Devices</h3>
-
-        <div class="device-item">
-            <p><strong>Surface Book</strong></p>
-            <p>Windows 11 • San Francisco, CA</p>
-            <p>This Device • Last active 2 min ago</p>
-        </div>
-
-        <div class="device-item">
-            <p><strong>Galaxy S24</strong></p>
-            <p>Android 16 • San Francisco, CA</p>
-            <p>Last active 1 hr ago</p>
-        </div>
-
-        <div class="device-item">
-            <p><strong>Samsung Galaxy Tab</strong></p>
-            <p>Android 16 • Oakland, CA</p>
-            <p>Last active 3 days ago</p>
-        </div>
-
-        <div class="device-item">
-            <p><strong>Windows PC</strong></p>
-            <p>Windows 11 • New York, NY</p>
-            <p>Last active 12 days ago</p>
-        </div>
-
-    </div>
+    </div> <!-- end two-column -->
 
 </div>
 
 </body>
 </html>
+
